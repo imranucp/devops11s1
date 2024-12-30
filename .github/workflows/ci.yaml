@@ -20,4 +20,3 @@ jobs:
           echo "Repository Owner: ${{github.owner}}"
           echo "Runner OS: ${{runner.os}}"
           echo "Event Generated: ${{github.event_name}}"
-        
