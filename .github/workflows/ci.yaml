@@ -17,5 +17,9 @@ jobs:
       - name: Repository Basic Info
         run: |
           echo "Repository Name: ${{github.repository}}"
-          echo "Repository Owner: ${{github.owner}}"
-        
+          echo "Repository Owner: ${{github.repository_owner}}"
+          echo "Runner OS: ${{runner.os}}"
+          echo "Event Generated: ${{github.event_name}}"
+          echo "_______List Of Branches________"
+          git branch
+          git log
